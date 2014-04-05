@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id = "content" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,9 +54,9 @@
                         <h2>A marketplace to allow anyone to have access to affordable and quality personal training.</h2>
                         <hr class="intro-divider">
                         <div class="input-group col-md-8 col-md-offset-2 input-group-lg">
-                          <input type="text" class="form-control" placeholder="Your Zipcode">
+                          <input type="text" id ="search-zip" class="form-control" placeholder="Your Zipcode">
                           <span class="input-group-btn">
-                            <button class="btn btn-primary" type="button">Search Trainers</button>
+                            <button id = "search-user" class="btn btn-primary" type="button">Search Trainers</button>
                           </span>
                         </div>
                     </div>
@@ -245,8 +245,10 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/home.js"></script>
     <script>
-        $('#loginModal').modal(options);
+        //$('#loginModal').modal(options);
     </script>
 </body>
 </html>

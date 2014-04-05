@@ -1,0 +1,1 @@
+//Place holder for scripts on results page

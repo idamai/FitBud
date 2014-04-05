@@ -19,7 +19,7 @@
 		function __construct($user){
 			$this->name = $user->name;
 			$this->email = $user->email;
-			$this->password = $user->password;
+			$this->password = md5($user->password);
 			$this->birthday = $user->birthday;
 			$this->address1 = $user->address1;
 			$this->address2 = $user->address2;

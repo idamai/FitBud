@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/accordion.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -67,7 +68,7 @@
                         <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
                         <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
                     <hr style="margin-top: 10px;"/>
-                    <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">Book</a>
+                    <a href="#bookModal" data-toggle="modal" data-target="#bookModal" class="btn btn-primary" title="Enlace" style="width: 100%;">Book</a>
                 </div>
             </div>
             <div class="col-md-8 well" style="padding-top: 0px; margin: 0 15px 0 15px;">
@@ -169,49 +170,49 @@
     </footer>
     
     <!-- Modals -->
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="loginModal" id="loginModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bookModal" id="bookModal" aria-hidden="true">
+      <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Login to SpotMe</h4>
+                <h4 class="modal-title" id="myModalLabel">Book a workout session with Chuan Xin</h4>
             </div>
-            <form role="form">
-                <div class="modal-body" style="padding-bottom: 5px;">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            <div class="modal-body" style="padding-bottom: 5px;">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label style="color: #797979;">Please pick the right date and time.</label>
+                            <div class='input-group date' id='datetimepicker1' style="width: 200px;">
+                                <input type='text' class="form-control"/>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label style="color: #797979;">Choose the type of session.</label>
+                            <br />
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="">
+                                Session Type <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
+                    <br />
+                    <label style="color: #797979;">Leave Chuanxin a brief message to describe what you need.</label>
+                    <textarea class="form-control" rows="5" style="resize: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
                 </div>
-                <div class="modal-footer" style="margin-top: 0px;">
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-            </form>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="signupModal" id="signupModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Signup for a SpotMe Account</h4>
             </div>
-            <form role="form">
-                <div class="modal-body" style="padding-bottom: 5px;">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                </div>
-                <div class="modal-footer" style="margin-top: 0px;">
-                    <button type="submit" class="btn btn-primary">Signup</button>
-                </div>
-            </form>
+            <div class="modal-footer" style="margin-top: 0px;">
+                <button type="submit" class="btn btn-primary">Request Session</button>
+            </div>
         </div>
       </div>
     </div>
@@ -219,9 +220,15 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/ratings.js"></script>
     <script>
-        $('#loginModal').modal(options);
+        $('#bookModal').modal(options);
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
     </script>
 </body>
 </html>

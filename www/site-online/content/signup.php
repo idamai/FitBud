@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page Template for Bootstrap</title>
+    <title>SpotMe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -122,6 +122,9 @@
 							<option value="WI">Wisconsin</option>
 							<option value="WY">Wyoming</option>
 						</select>
+			  		</div>
+			  		<div class="form-group">
+					    <input type = "text" class="form-control" id = "country-input" placeholder="Country">
 			  		</div>
 			  		<div class="form-group">
 					    <input type = "text" class="form-control" id = "zip-input" placeholder="Zipcode">

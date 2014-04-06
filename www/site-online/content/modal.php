@@ -38,8 +38,8 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="/img/henson.jpg" style="width: 70px; height: 70px; float: left;"/>
-                            <p style="margin-left: 80px;">Henson Tay</p>
+                            <img src="/img/cc.jpg" style="width: 70px; height: 70px; float: left;"/>
+                            <p style="margin-left: 80px;">Chin Chuen</p>
                             <p style="margin-left: 80px; color: #797979; margin-top: -10px;">Crossfit Session</p>
                             <p style="margin-left: 80px; color: #797979; margin-top: -10px;">11pm-12pm, 14/07/2014 at Pottruck Gym</p>
                         </div>

@@ -22,10 +22,10 @@
                     <?php
 						if (!isset($_SESSION['username'])) {
 					?>
-							<li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
+							<li><a href="#loginModal" data-toggle="modal" data-target="#loginModal" style="color: white;"><i class="fa fa-lock"></i> Login</a>
 							</li>
 							
-							<li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
+							<li><a href="/signup.php" style="color: white;">Signup</a>
 							</li>
 					<?php
 						} else {
@@ -35,8 +35,8 @@
 								<li class="dropdown">
 									<a href="profile" class="dropdown-toggle" data-toggle="dropdown" style="color:white;">Shazwi Suwandi <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="/profile.html"><i class="fa fa-list-alt"></i> Profile</a></li>
-										<li><a href="/edit_profile.html"><i class="fa fa-cog"></i> Settings</a></li>
+										<li><a href="/profile.php"><i class="fa fa-list-alt"></i> Profile</a></li>
+										<li><a href="/edit_profile.php"><i class="fa fa-cog"></i> Settings</a></li>
 										<li class="divider"></li>
 										<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
 									</ul>
@@ -44,7 +44,7 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 							  <li class="dropdown">
-								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-bell" style="color: white;"></i> <span class="badge bg-color-red" style="background-color: #e50000;">1</span></a>
+								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-bell" style="color: white;"></i> <span class="badge bg-color-red">1</span></a>
 								<ul class="dropdown-menu" style="width: 400px; max-height: 315px;">
 								  <li style="padding-left: 10px; margin-bottom: -5px; font-weight: bold; color: #333333;" id="notifications">Notifications</li>
 								  <li class="divider" style="margin-bottom: 0px;"></li>
@@ -59,7 +59,7 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 							  <li class="dropdown">
-								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-envelope" style="color: white;"></i> <span class="badge bg-color-red" style="background-color: #e50000;">1</span></a>
+								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-envelope" style="color: white;"></i> <span class="badge bg-color-red">1</span></a>
 								<ul class="dropdown-menu" style="width: 400px; max-height: 315px;">
 								  <li style="padding-left: 10px; margin-bottom: -5px; font-weight: bold; color: #333333;" id="notifications">Messages</li>
 								  <li class="divider" style="margin-bottom: 0px;"></li>
@@ -81,16 +81,16 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right" style="padding-right: 15px;">
 							  <li class="dropdown">
-								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-exclamation-triangle" style="color: white;"></i> <span class="badge bg-color-red" style="background-color: #e50000;">1</span></a>
+								<a href="profile" class="activity-dropdown" data-toggle="dropdown"><i class="fa fa-exclamation-triangle" style="color: white;"></i> <span class="badge bg-color-red">1</span></a>
 								<ul class="dropdown-menu" style="width: 400px; max-height: 315px;">
 								  <li style="padding-left: 10px; margin-bottom: -5px; font-weight: bold; color: #333333;" id="notifications">Pending Sessions</li>
 								  <li class="divider" style="margin-bottom: 0px;"></li>
 									<a href="#paymentModal" data-toggle="modal" data-target="#paymentModal" style="padding: 0px;">
 									  <li style="padding-left: 10px; padding-bottom: 5px; padding-top:10px;">
-										<img src="/img/henson.jpg" style="float: left; width: 40px; height: 40px;"/>
+										<img src="/img/cc.jpg" style="float: left; width: 40px;"/>
 										<div style="color: #787878; margin-left: 50px; padding-right: 10px;"> 
 										  <strong style="color: black;"> 
-										  Henson Tay
+										  Chin Chuen
 										  </strong>
 										  <br /> 
 										  <p style="padding: 0px; margin: 0px;">Crossfit Session at <strong>Pottruck Gym</strong> for <strong>14/07/2014 | 11pm - 12pm</strong></p>

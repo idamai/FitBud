@@ -42,7 +42,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SpotMe - Chuan Xin</title>
+    <title>SpotMe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -66,8 +66,8 @@
         <div class="row">
             <div class="col-md-3 well" style="margin: 15px; margin-top: 0px;">
                 <div style="text-align:center;">
-                    <img src="/img/cc.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chin Chuen <a href="#" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a> <a href="#" style="font-size: 16px;"><i class="fa fa-twitter-square"></i></a></h2>
+                    <img src="/img/shaz.jpg" alt="Texto Alternativo" class="img-thumbnail">
+                    <h2>Shazwi <a href="#" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a> <a href="#" style="font-size: 16px;"><i class="fa fa-twitter-square"></i></a></h2>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
@@ -91,7 +91,7 @@
             <div class="col-md-8 well" style="padding-top: 0px; margin: 0 15px 0 15px;">
                 <h3>About Me</h3>
                 <hr />
-                <p style="color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p style="color: #797979;">Health and fitness has always been important to me personally and professionally. I enjoy sharing years of experience with others. With an ACE Personal Trainer certification I am able to share my knowledge one on one. I enjoy a holistic approach with knowledge of factors that create and maintain health. I have the ability to form strong partnerships with individuals to set goals, envision end results, and create action plans to ensure success. Experience working on work/life balance and resilience in corporate settings.</p>
                 <h3>Endorsements</h3>
                 <hr />
                 <div>
@@ -183,10 +183,10 @@
                 <br />
                 <div>
                     <div style="float:left;">
-                        <img src="/img/shaz.jpg" style="width: 60px; height: 60px;"/>
+                        <img src="/img/cc.jpg" style="width: 60px; height: 60px;"/>
                     </div>
                     <div style="margin-left: 70px;">
-                        <a href="#">Shazwi Suwandi</a>
+                        <a href="#">Chin Chuen</a>
                         <p style="color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
@@ -234,9 +234,11 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/ratings.js"></script>
+    <script src="js/ratings2.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="js/profile.js"></script>
+    <script src="js/payment.js"></script>
 </body>
 </html>
 <?php

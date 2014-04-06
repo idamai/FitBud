@@ -42,7 +42,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SpotMe - Chuan Xin</title>
+    <title>SpotMe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -66,8 +66,8 @@
         <div class="row">
             <div class="col-md-3 well" style="margin: 15px; margin-top: 0px;">
                 <div style="text-align:center;">
-                    <img src="/img/cc.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chin Chuen <a href="#" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a> <a href="#" style="font-size: 16px;"><i class="fa fa-twitter-square"></i></a></h2>
+                    <img src="/img/shaz.jpg" alt="Texto Alternativo" class="img-thumbnail">
+                    <h2>Shazwi <a href="#" style="font-size: 16px;"><i class="fa fa-facebook-square"></i></a> <a href="#" style="font-size: 16px;"><i class="fa fa-twitter-square"></i></a></h2>
                     <div>
                         <a href="#" class="btn btn-warning btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-warning btn-xs" style="margin-top:2px;">cardio</a>
@@ -170,6 +170,11 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/ratings.js"></script>
+    <script src="js/ratings2.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/payment.js"></script>
     <script>
         $('#bookModal').modal(options);
     </script>

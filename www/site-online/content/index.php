@@ -44,7 +44,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page Template for Bootstrap</title>
+    <title>SpotMe</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -96,6 +96,11 @@
     <script src="js/bootstrap.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/home.js"></script>
+	<script src="js/ratings.js"></script>
+    <script src="js/ratings2.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/payment.js"></script>
     <script>
         //$('#loginModal').modal(options);
     </script>

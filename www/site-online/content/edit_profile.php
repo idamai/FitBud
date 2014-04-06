@@ -1,3 +1,39 @@
+<?php
+	session_start();
+	require_once ("../system/settings.php");
+	require_once("../system/db_login.php");
+	$conn =  dbconnect($dbconn);
+
+	if (!isset($_SESSION['username'])) {
+		$username = $_POST['email'];
+		$pass = md5($_POST['password']);
+		if($username!=null)
+		{
+			$username = mysql_real_escape_string($username);
+		
+			$query = mysql_query("SELECT * FROM `users` WHERE email='$username'");
+			$count = mysql_num_rows($query);
+			if($count==1)
+			{
+				while($row = mysql_fetch_array($query))
+				{
+					if($row['password']==$pass)
+					{
+						$_SESSION['username'] = $row['email'];
+					}
+					else
+					{
+						echo("<script>alert('Password doesn't match. Try again!')</script>");
+						unset($_SESSION['username']);
+					}
+				}
+			}
+			else{
+				echo("<script>alert('User doesn't exist. Please sign up!')</script>");
+			}
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,37 +59,9 @@
     <link href="css/landing-page.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="padding: 5px;">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://startbootstrap.com"><img src="/img/logo.png" style="height: 25px; padding: 0px;"/></a>
-            </div>
-            <div class="collapse navbar-collapse navbar-left">
-                <form class="navbar-form">
-                    <input type="text" class="form-control" placeholder="Search trainers by zipcode" style="width: 300px;">
-                </form>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
-                    </li>
-                    <li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
-                    </li>
-                </ul>
-            </div>
-            -->
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php
+		require_once ("navbar.php");
+	?>
     <div class="container" style="margin-top: 80px; margin-bottom: 15px;">
         <div class="row">
             <div class="col-md-3 well" style="margin: 15px; margin-top: 0px;">
@@ -153,52 +161,9 @@
     </footer>
     
     <!-- Modals -->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bookModal" id="bookModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Book a workout session with Chuan Xin</h4>
-            </div>
-            <div class="modal-body" style="padding-bottom: 5px;">
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <label style="color: #797979;">Please pick the right date and time.</label>
-                            <div class='input-group date' id='datetimepicker1' style="width: 200px;">
-                                <input type='text' class="form-control"/>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <label style="color: #797979;">Choose the type of session.</label>
-                            <br />
-                            <div class="btn-group">
-                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="">
-                                Session Type <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <label style="color: #797979;">Leave Chuanxin a brief message to describe what you need.</label>
-                    <textarea class="form-control" rows="5" style="resize: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
-                </div>
-            </div>
-            <div class="modal-footer" style="margin-top: 0px;">
-                <button type="submit" class="btn btn-primary">Request Session</button>
-            </div>
-        </div>
-      </div>
-    </div>
+    <?php
+		require_once("modal.php");
+	?>
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>

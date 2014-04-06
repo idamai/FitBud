@@ -5484,6 +5484,18 @@ button.close {
 .carousel-inner > .active.right {
   left: 100%;
 }
+a:hover {
+  text-decoration:none;
+}
+.dropdown-menu li:hover {
+  background: #f0f4f7;
+}
+#notifications:hover {
+  background: transparent;
+}
+#messages:hover {
+  background: transparent;
+}
 .carousel-control {
   position: absolute;
   top: 0;

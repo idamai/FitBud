@@ -1,3 +1,36 @@
+<?php
+	require_once ("../system/settings.php");
+	require_once("../system/db_login.php");
+	$conn =  dbconnect($dbconn);
+
+	$username = $_GET['email'];
+	$pass = md5($_GET['password']);
+	if($username!=null)
+	{
+		$username = mysql_real_escape_string($username);
+	
+		$query = mysql_query("SELECT * FROM `users` WHERE email='$username'");
+		$count = mysql_num_rows($query);
+		if($count==1)
+		{
+			while($row = mysql_fetch_array($query))
+			{
+				if($row['password']==$pass)
+				{
+					$_SESSION['username'] = $row['email'];
+				}
+				else
+				{
+					echo("<script>alert('Password doesn't match. Try again!')</script>");
+					unset($_SESSION['username']);
+				}
+			}
+		}
+		else{
+			echo("<script>alert('User doesn't exist. Please sign up!')</script>");
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,12 +86,20 @@
             -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
-                    </li>
-                    <li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
-                    </li>					
-					<li><a href="#paymentModal" data-toggle="modal" data-target="#paymentModal">Payment</a>
-                    </li>
+					<?php
+						if (!isset($_SESSION['username'])) {
+					?>
+							<li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
+							</li>
+							
+							<li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
+							</li>					
+							<li><a href="#paymentModal" data-toggle="modal" data-target="#paymentModal">Payment</a>
+							</li>
+					<?php
+						}
+					?>
+                   
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -82,7 +123,13 @@
                         <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
                         <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
                     <hr style="margin-top: 10px;"/>
-                    <a href="#bookModal" data-toggle="modal" data-target="#bookModal" class="btn btn-primary btn-lg" title="Enlace" style="width: 100%;">Request Session</a>
+					<?php
+						if (isset($_SESSION['username'])) {
+					?>
+						<a href="#bookModal" data-toggle="modal" data-target="#bookModal" class="btn btn-primary btn-lg" title="Enlace" style="width: 100%;">Request Session</a>
+					<?php
+						}
+					?>                    
                 </div>
             </div>
             <div class="col-md-8 well" style="padding-top: 0px; margin: 0 15px 0 15px;">
@@ -98,7 +145,13 @@
                         5
                       </button>
                     </div>
-                    <a href="#"><i class="fa fa-plus"></i> Endorse</a>
+                    <?php
+						if (isset($_SESSION['username'])) {
+					?>
+						<a href="#"><i class="fa fa-plus"></i> Endorse</a>
+					<?php
+						}
+					?>
                     <div style="float: right;">
                         <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
                     </div>
@@ -110,7 +163,13 @@
                         5
                       </button>
                     </div>
-                    <a href="#"><i class="fa fa-plus"></i> Endorse</a>
+                    <?php
+						if (isset($_SESSION['username'])) {
+					?>
+						<a href="#"><i class="fa fa-plus"></i> Endorse</a>
+					<?php
+						}
+					?>
                     <div style="float: right;">
                         <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
                     </div>
@@ -122,7 +181,13 @@
                         5
                       </button>
                     </div>
-                    <a href="#"><i class="fa fa-plus"></i> Endorse</a>
+					<?php
+						if (isset($_SESSION['username'])) {
+					?>
+						<a href="#"><i class="fa fa-plus"></i> Endorse</a>
+					<?php
+						}
+					?>
                     <div style="float: right;">
                         <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
                     </div>
@@ -134,7 +199,13 @@
                         5
                       </button>
                     </div>
-                    <a href="#"><i class="fa fa-plus"></i> Endorse</a>
+                    <?php
+						if (isset($_SESSION['username'])) {
+					?>
+						<a href="#"><i class="fa fa-plus"></i> Endorse</a>
+					<?php
+						}
+					?>
                     <div style="float: right;">
                         <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
                     </div>
@@ -251,6 +322,30 @@
         </div>
       </div>
     </div>
+	<!--Login-->
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="loginModal" method = "POST" id="loginModal" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Login to SpotMe</h4>
+            </div>
+            <form role="form">
+                <div class="modal-body" style="padding-bottom: 5px;">
+                    <div class="form-group">
+                        <input type="email" class="form-control"  name = "email" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name = "password" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 0px;">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
 	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="paymentModal" id="paymentModal" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -314,3 +409,6 @@
     <script src="js/profile.js"></script>
 </body>
 </html>
+<?php
+	dbclose($conn);
+?>

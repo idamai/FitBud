@@ -2,8 +2,8 @@
 
 
 function dbconnect($dbconn){
-	$mysql = mysql_connect($dbconn["server"], $dbconn["username"], $dbconn["password"], $dbconn["database"]);
-	if ($mysql->connect_errno){
+	$mysql = mysql_connect($dbconn["server"], $dbconn["username"], $dbconn["password"], $dbconn["dbname"]);
+	if ($mysql["connect_errno"]){
 		//Connection failure
 		throw new Exception("Failed to connect to MySQL: ".$mysqli->connect_error);
 	}

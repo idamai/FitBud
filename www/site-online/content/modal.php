@@ -46,6 +46,11 @@
                     </div>
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-lg-12">
+                            <img src="/img/map.png" style="width: 100%;" value="Pottruck Health and Fitness Center University of Pennsylvania Philadelphia, PA 19104"/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-lg-12">
                             <h5 style="margin:0px; margin-bottom: 15px;">Enter credit card details</h5>
                         </div>
                     </div>
@@ -134,6 +139,7 @@
                     </div>
                 </div>
                 <div class="modal-footer" style="margin-top: 0px;">
+                    <button type="submit" class="btn btn-danger">Reject Request</button>
                     <button type="submit" class="btn btn-primary">Accept Request</button>
                 </div>  
             </form>

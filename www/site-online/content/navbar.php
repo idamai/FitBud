@@ -10,7 +10,7 @@
                 <a class="navbar-brand" href="http://localhost:8888"><img src="/img/logo.png" style="height: 25px; margin-top: -5px;"/></a>
             </div>
 
-            <div class="collapse navbar-collapse navbar-left">
+            <div class="collapse navbar-collapse navbar-left" id="search">
                 <form class="navbar-form">
                     <input type="text" class="form-control" placeholder="Search trainers by zipcode" style="width: 300px;">
                 </form>

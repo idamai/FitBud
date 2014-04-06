@@ -55,7 +55,11 @@
 
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
-
+	<style>
+		#search {
+			visibility: hidden;
+		}
+	</style>
 </head>
 <body>
 	<?php

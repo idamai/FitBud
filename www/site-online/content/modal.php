@@ -146,3 +146,55 @@
         </div>
       </div>
     </div>
+	    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="bookModal" id="bookModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Book a workout session with Chuan Xin</h4>
+            </div>
+            <div class="modal-body" style="padding-bottom: 5px;">
+                <div class="form-group">
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-lg-6">
+                            <label>Please pick the right date and time.</label>
+                            <div class='input-group date' id='datetimepicker1' style="width: 200px;">
+                                <input type='text' class="form-control"/>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Choose the type of session.</label>
+                            <br />
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="">
+                                Session Type <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:-10px;">
+                        <div class="col-lg-6">
+                            <label>Location</label>
+                            <p style="color: #797979;">Pottruck Health and Fitness Center University of Pennsylvania Philadelphia, PA 19104</p>
+                        </div>
+                    </div>
+                    <br />
+                    <label>Leave Chuanxin a brief message to describe what you need.</label>
+                    <textarea class="form-control" rows="5" style="resize: none; color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top: 0px;">
+                <button type="submit" class="btn btn-primary">Request Session</button>
+            </div>
+        </div>
+      </div>
+    </div>

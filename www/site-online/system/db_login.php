@@ -1,6 +1,4 @@
 <?php
-
-
 function dbconnect($dbconn){
 	$mysql = mysql_connect($dbconn["server"], $dbconn["username"], $dbconn["password"], $dbconn["database"]);
 	if ($mysql->connect_errno){

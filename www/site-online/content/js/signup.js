@@ -81,8 +81,40 @@ $(document).ready(function(){
 		},
 		errorClass: 'has-error',
 		submitHandler: function(form){
+			var name = $("#name-input").val();
+			var email = $("#email-input").val();
+			var password = $("#password-input").val();
+			var birthday = $("#birthday-input").val();
+			var gender = $("#gender-input").val();
+			var gym_name = $("#address1-input").val();
+			var address1 = $("#address1-input").val();
+			var address2 = $("#address2-input").val();
+			var city = $("#city-input").val();
+			var state = $("#state-input").val();
+			var country = $("#country-input").val();
+			var zip = $("#zip-input").val();
+			var summary = $("#summary-input").val();
+			var skills = $("#skills-input").val();
 			$.ajax({
 				url:"signup-process.php",
+				data:{
+					user: {
+						name:name,
+						email:email,
+						password:password,
+						birthday:birthday,
+						gender:gender,
+						gym_name:gym_name,
+						address1:address1,
+						address2:address2,
+						city:city,
+						state:state,
+						country:country,
+						zip:zip,
+						summary:summary,
+						skills:skills
+					}
+				},
 				type:"post",
 				success: function(data, textStatus,xhr){
 					document.location.href='/profile.php';

@@ -36,7 +36,7 @@
 				<div class="col-md-4">
 					<h3>Personal Particulars</h3>
 					<div class="form-group">
-					    <input type = "text" class="form-control" name = "signupName" "id = "name-input" placeholder="Name">
+					    <input type = "text" class="form-control" name = "signupName" id = "name-input" placeholder="Name">
 			  		</div>
 			  		<div class="form-group">
 					    <input type = "email" class="form-control" name = "signupEmail" id = "email-input" placeholder="Email">

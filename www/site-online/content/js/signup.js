@@ -52,4 +52,42 @@ $(document).ready(function(){
 			codeAddress(search_string);
 		}
 	});
+	
+	$("#signup-form").validate({
+		rule: {
+			signupName:{
+				required:true
+			},
+			signupEmail:{
+				required:true,
+				email:true
+			},
+			signupPassword : {
+                    minlength : 5,
+					required:true
+            },
+			signupPasswordCfm : {
+				minlength : 5,
+				required:true,
+				equalTo : "#password-input"
+			},
+			signupBirthday :{
+				required:true,
+				date: true
+			},
+			signupGender :{
+				required:true
+			}
+		},
+		errorClass: 'has-error',
+		submitHandler: function(form){
+			$.ajax({
+				url:"signup-process.php",
+				type:"post",
+				success: function(data, textStatus,xhr){
+					document.location.href='/profile.php';
+				}
+			});
+		}
+	});
 });

@@ -31,27 +31,27 @@
                 <div class="alert alert-info">Signup for a SpotMe account</div>
             </div>
         </div>
-		<form role = "form" action="/profile.php" method = "POST">
+		<form role = "form" id = "signup-form" action="/profile.php" method = "POST">
         	<div class="row">
 				<div class="col-md-4">
 					<h3>Personal Particulars</h3>
 					<div class="form-group">
-					    <input type = "text" class="form-control" id = "name-input" placeholder="Name">
+					    <input type = "text" class="form-control" name = "signupName" "id = "name-input" placeholder="Name">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "email" class="form-control" id = "email-input" placeholder="Email address">
+					    <input type = "email" class="form-control" name = "signupEmail" id = "email-input" placeholder="Email">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "password" class="form-control" id = "password-input">
+					    <input type = "password" class="form-control" name = "signupPassword"id = "password-input" placeholder="Password">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "password" class="form-control" id = "password-cfm-input">
+					    <input type = "password" class="form-control" name = "signupPasswordCfm" id = "password-cfm-input" placeholder="Confirm Password">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "date" class="form-control" id = "brithday-input">
+					    <input type = "date" class="form-control" name = "signupBirthday" id = "birthday-input">
 			  		</div>
 			  		<div class="form-group">
-					    <select class="form-control" id = "email-input">
+					    <select class="form-control" name = "signupGender" id = "gender-input">
 							<option value ="M">M</option>
 							<option value ="M">F</option>
 						</select>
@@ -60,16 +60,16 @@
 				<div class="col-md-4">
 					<h3>Where do you usually workout?</h3>
 					<div class="form-group">
-					    <input type = "text" class="form-control" id = "address1-input" placeholder="Address 1">
+					    <input type = "text" class="form-control" name = "signupAddress1" id = "address1-input" placeholder="Address 1">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "text" class="form-control" id = "address2-input" placeholder="Address 1">
+					    <input type = "text" class="form-control" name = "signupAddress2" id = "address2-input" placeholder="Address 2">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "text" class="form-control" id = "city-input" placeholder="City">
+					    <input type = "text" class="form-control" name = "signupCity" id = "city-input" placeholder="City">
 			  		</div>
 			  		<div class="form-group">
-					    <select class = "form-control" id = "state-input">
+					    <select class = "form-control" name = "signupState" id = "state-input">
 							<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
 							<option value="AZ">Arizona</option>
@@ -124,10 +124,10 @@
 						</select>
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "text" class="form-control" id = "country-input" placeholder="Country">
+					    <input type = "text" class="form-control" name = "signupCountry "id = "country-input" placeholder="Country">
 			  		</div>
 			  		<div class="form-group">
-					    <input type = "text" class="form-control" id = "zip-input" placeholder="Zipcode">
+					    <input type = "text" class="form-control" name = "signupZip" id = "zip-input" placeholder="Zipcode">
 			  		</div>
 				</div>
 				<div class="col-md-4">
@@ -174,7 +174,9 @@
     <!--no modals for sign up page-->
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>	
+    <script src="js/jquery.mask.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 	<script src="js/signup.js"></script>
 </body>
 </html>

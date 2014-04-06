@@ -61,8 +61,7 @@
 	<?php
 		require_once ("navbar.php");
 	?>
-    
-
+   
     <div class="intro-header" style="height: 100%;">
         <div class="container">
             <div class="row">

@@ -7,7 +7,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://startbootstrap.com"><img src="/img/logo.png" style="height: 25px; padding: 0px;"/></a>
+                <a class="navbar-brand" href="http://localhost:8888"><img src="/img/logo.png" style="height: 25px; margin-top: -5px;"/></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-left">
+                <form class="navbar-form">
+                    <input type="text" class="form-control" placeholder="Search trainers by zipcode" style="width: 300px;">
+                </form>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

@@ -39,14 +39,7 @@
                 </form>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
-                    </li>
-                    <li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- no dropdown for sign up page -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -57,7 +50,7 @@
                 <h2>Sign Up</h2>
             </div>
         </div>
-		<form role = "form" action="/profile.html" method = "POST">
+		<form role = "form" action="/profile.php" method = "POST">
 			<div class = "form-group pull-left col-md-4">
 				<div class = "row">
 					<h3>Personal Particulars</h3>
@@ -190,59 +183,10 @@
     </footer>
     
     <!-- Modals -->
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="loginModal" id="loginModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Login to SpotMe</h4>
-            </div>
-            <form role="form">
-                <div class="modal-body" style="padding-bottom: 5px;">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                </div>
-                <div class="modal-footer" style="margin-top: 0px;">
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-            </form>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="signupModal" id="signupModal" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Signup for a SpotMe Account</h4>
-            </div>
-            <form role="form">
-                <div class="modal-body" style="padding-bottom: 5px;">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                </div>
-                <div class="modal-footer" style="margin-top: 0px;">
-                    <button type="submit" class="btn btn-primary">Signup</button>
-                </div>
-            </form>
-        </div>
-      </div>
-    </div>
-
+    <!--no modals for sign up page-->
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
 	<script src="js/signup.js"></script>
-    <script>
-   //     $('#loginModal').modal(options);
-    </script>
 </body>
 </html>

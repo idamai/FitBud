@@ -1,33 +1,36 @@
 <?php
+	session_start();
 	require_once ("../system/settings.php");
 	require_once("../system/db_login.php");
 	$conn =  dbconnect($dbconn);
 
-	$username = $_GET['email'];
-	$pass = md5($_GET['password']);
-	if($username!=null)
-	{
-		$username = mysql_real_escape_string($username);
-	
-		$query = mysql_query("SELECT * FROM `users` WHERE email='$username'");
-		$count = mysql_num_rows($query);
-		if($count==1)
+	if (!isset($_SESSION['username'])) {
+		$username = $_POST['email'];
+		$pass = md5($_POST['password']);
+		if($username!=null)
 		{
-			while($row = mysql_fetch_array($query))
+			$username = mysql_real_escape_string($username);
+		
+			$query = mysql_query("SELECT * FROM `users` WHERE email='$username'");
+			$count = mysql_num_rows($query);
+			if($count==1)
 			{
-				if($row['password']==$pass)
+				while($row = mysql_fetch_array($query))
 				{
-					$_SESSION['username'] = $row['email'];
-				}
-				else
-				{
-					echo("<script>alert('Password doesn't match. Try again!')</script>");
-					unset($_SESSION['username']);
+					if($row['password']==$pass)
+					{
+						$_SESSION['username'] = $row['email'];
+					}
+					else
+					{
+						echo("<script>alert('Password doesn't match. Try again!')</script>");
+						unset($_SESSION['username']);
+					}
 				}
 			}
-		}
-		else{
-			echo("<script>alert('User doesn't exist. Please sign up!')</script>");
+			else{
+				echo("<script>alert('User doesn't exist. Please sign up!')</script>");
+			}
 		}
 	}
 ?>

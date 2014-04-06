@@ -40,7 +40,6 @@
                 </form>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <!--
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
@@ -49,7 +48,6 @@
                     </li>
                 </ul>
             </div>
-            -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -212,7 +210,7 @@
         $(function () {
             $('#datetimepicker1').datetimepicker();
             $('#addOffering').click(function() {
-                $("#addOffering").before("<input type='text' class='form-control2' style='width: 20%; margin-right: 5px; margin-bottom: 5px;'/>");
+                $("#addOffering").prepend("<input type='text' class='form-control2' style='width: 20%; margin-right: 5px; margin-bottom: 5px;'/>");
             });
         });
     </script>

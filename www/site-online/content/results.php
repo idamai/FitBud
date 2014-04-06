@@ -257,6 +257,24 @@
                     <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
                 </div>
             </div>
+            <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
+                <div style="text-align:center;">
+                    <img src="/img/shaz.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Shazwi</h3>
+                    <div>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
+                    </div>
+                    <hr style="margin-bottom: 10px;"/>
+                        <h4 style="color: #739e73;">$60/hr</h4>
+                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
+                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
+                    <hr style="margin-top: 10px;"/>
+                    <a href="/profile.php" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
+                </div>
+            </div>
         </div>
     </div>
     <footer style="padding: 15px 0 0 0;">

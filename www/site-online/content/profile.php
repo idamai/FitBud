@@ -177,7 +177,8 @@
                     </div>
                     <div style="margin-left: 70px;">
                         <a href="#">Chuan Xin</a>
-                        <p style="color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p style="color: #797979;">Shazwi is great! Friendly, funny and most of all, effective. Working with Shazwi, over the course of 6 months, I lost 27 lbs of fat and gained 17 lbs of muscle. Incredible results! 
+I highly recommend him as a personal trainer.</p>
                     </div>
                 </div>
                 <br />
@@ -187,7 +188,7 @@
                     </div>
                     <div style="margin-left: 70px;">
                         <a href="#">Chin Chuen</a>
-                        <p style="color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p style="color: #797979;">Shazwi is the awesomest Malay guy in the universe. He improved my neck from being 20cm in circumference to a whopping tree trunk.</p>
                     </div>
                 </div>
                 <br />
@@ -197,7 +198,7 @@
                     </div>
                     <div style="margin-left: 70px;">
                         <a href="#">Henson Tay</a>
-                        <p style="color: #797979;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p style="color: #797979;">Hi I am Henson. Somtimes people call me handsome. I know this is not a review of Shazwi but essentially it's a review of myself.</p>
                     </div>
                 </div>
             </div>

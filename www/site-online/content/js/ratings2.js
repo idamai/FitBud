@@ -26,6 +26,16 @@ var __slice = [].slice;
       }
       this.createStars();
       this.syncRating();
+      this.$el.on('mouseover.starrr', 'span', function(e) {
+        return _this.syncRating(_this.$el.find('span').index(e.currentTarget) + 1);
+      });
+      this.$el.on('mouseout.starrr', function() {
+        return _this.syncRating();
+      });
+      this.$el.on('click.starrr', 'span', function(e) {
+        return _this.setRating(_this.$el.find('span').index(e.currentTarget) + 1);
+      });
+      this.$el.on('starrr:change', this.options.change);
     }
 
     Starrr.prototype.createStars = function() {
@@ -33,11 +43,19 @@ var __slice = [].slice;
 
       _results = [];
       for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
-        _results.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty' style='color: #ffb709;'></span>"));
+        _results.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty'></span>"));
       }
       return _results;
     };
 
+    Starrr.prototype.setRating = function(rating) {
+      if (this.options.rating === rating) {
+        rating = void 0;
+      }
+      this.options.rating = rating;
+      this.syncRating();
+      return this.$el.trigger('starrr:change', rating);
+    };
 
     Starrr.prototype.syncRating = function(rating) {
       var i, _i, _j, _ref;
@@ -83,4 +101,15 @@ var __slice = [].slice;
 
 $(function() {
   return $(".starrr").starrr();
+});
+
+$( document ).ready(function() {
+      
+  $('#stars').on('starrr:change', function(e, value){
+    $('#count').html(value);
+  });
+  
+  $('#stars-existing').on('starrr:change', function(e, value){
+    $('#count-existing').html(value);
+  });
 });

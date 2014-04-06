@@ -169,7 +169,10 @@
             </div>
         </div>
     </footer>
-    
+    <!-- Modals -->
+	<?php
+		require_once("modal.php");
+	?>
     <!-- Modals -->
     <!--no modals for sign up page-->
     <!-- JavaScript -->

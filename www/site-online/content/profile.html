@@ -45,6 +45,8 @@
                     <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-lock"></i> Login</a>
                     </li>
                     <li><a href="#signupModal" data-toggle="modal" data-target="#signupModal">Signup</a>
+                    </li>					
+					<li><a href="#paymentModal" data-toggle="modal" data-target="#paymentModal">Payment</a>
                     </li>
                 </ul>
             </div>
@@ -229,18 +231,66 @@
         </div>
       </div>
     </div>
-
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="paymentModal" id="paymentModal" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Select Payment Method</h4>
+            </div>
+            <form role="form" id="payment-form">
+                <div class="modal-body" style="padding-bottom: 5px;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="card-number" name="cardNumber" placeholder="Card Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="card-name" name="cardName" placeholder="Card's Holder Name">
+                    </div>
+					<!--PUT LOGOS HERE -->
+					<div class = " row col-md-10 col-md-offset-1">
+						<img src="img/32/mastercard.png" />
+						<img src="img/32/visa.png" />
+						<img src="img/32/maestro.png" />
+						<img src="img/32/amex.png" />
+						<img src="img/32/google-wallet.png" />
+					</div>
+					<div style="clear:both"></div>
+					<br/>
+					<div class = "row">
+						<div class =  "col-md-7">
+							<label>Card Expiry:</label>
+						</div>
+						<div class =  "col-md-5">
+							<label>CVV:</label>
+						</div>
+					</div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="cardExpMonth" id="card-exp-month" placeholder="MM">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="cardExpYear" id="card-exp-year" placeholder="YY">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" name="cardCvv" id="card-cvv" placeholder="CVV">
+                    </div>
+					<div style = "clear:both"></div> 
+					<div  id ="payment-errors"></div>
+                </div>
+                <div class="modal-footer" style="margin-top: 0px;">
+                    <button type="button" id="cancel-payment" class="btn btn-danger">Cancel</button>
+					<button type="submit" class="btn btn-primary">Secure Pay</button>
+                </div>	
+            </form>
+        </div>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/ratings.js"></script>
-    <script>
-    </script>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker();
-        });
-    </script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 </html>

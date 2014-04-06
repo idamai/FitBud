@@ -61,38 +61,29 @@
     <?php
 		require_once("navbar.php");
 	?>
-    <div class="container" style="margin-top: 70px;">
+    <div class="container" style="margin-top: 80px;">
       <div class="row">
         <div class="col-lg-8" style="width: 60%; margin-left: 15px;">
-          <div class="well">
+          <div class="well" id="messagebox">
             <div class="row">
               <div style="margin-left: 15px;">
                 <img src="/img/henson.jpg" style="width: 70px; height: 70px; float: left;"/>
                 <a style="margin-left: 10px;">Henson Tay</a>
-                <p style="margin-left: 80px; color: #797979;">Hi Chin Chuen, I would like an awesome back rub from you. On my kuku bird.</p>
-                <p style="margin-left: 80px; color: #797979; margin-top: -10px; padding-bottom: 10px;">10pm</p>
-              </div>
-            </div>
-            <hr style="margin-top: 0px; margin-bottom: 10px;"/>
-            <div class="row">
-              <div style="margin-left: 15px;">
-                <img src="/img/cc.jpg" style="width: 70px; height: 70px; float: left;"/>
-                <a href="#" style="margin-left: 10px;">Chin Chuen</a>
-                <p style="margin-left: 80px; color: #797979;">Hi Henson, I'll be glad to do a back rub for you.</p>
-                <p style="margin-left: 80px; color: #797979;margin-top: -10px; padding-bottom: 10px;">10.15pm</p>
+                <p style="margin-left: 80px; color: #797979;">Hi Shazwi, I'm interested in trying out crossfit for the first time. I may need some guidance on how to pursue this path.</p>
+                <p style="margin-left: 80px; color: #797979; margin-top: -10px; padding-bottom: 10px;">Yesterday</p>
               </div>
             </div>
           </div>
             <div class="row" style="padding: 15px; margin-top: -20px;">
-                <a style="margin-left: 0px;">Chin Chuen</a>
-                <textarea type="text" cols="30" class="form-control" style="resize:none;"></textarea>
+                <a style="margin-left: 0px;">Shazwi</a>
+                <textarea type="text" cols="30" class="form-control" style="resize:none;" id="message"></textarea>
             </div>
         </div>
         <div class="col-lg-4 well" style="margin-left: 15px;">
             <img src="/img/henson.jpg" style="width: 70px; height: 70px; float: left;"/>
             <a style="margin-left: 10px;">Henson Tay</a>
             <p style="margin-left: 80px; color: #797979;">Crossfit Session</p>
-            <p style="margin-left: 80px; color: #797979; margin-top: -10px;">11pm-12pm, 14/07/2014 at Pottruck Gym</p>
+            <p style="margin-left: 80px; color: #797979; margin-top: -10px;">11am-12pm, 04/07/2014 at Pottruck Health and Fitness Center</p>
             <img src="/img/map2.png" style="width: 100%; margin-top: 15px;" value="Pottruck Health and Fitness Center University of Pennsylvania Philadelphia, PA 19104"/>
         </div>
       </div>
@@ -134,6 +125,20 @@
     <script src="js/profile.js"></script>
     <script>
    //     $('#loginModal').modal(options);
+    //send message by ajax
+        $('#message').keypress(function(e){
+          if(e.which == 13){
+               // submit via ajax or
+            var message = $("#message").val();
+            var d = new Date();
+            var n = d.getHours();
+            n=n%12;
+            var m = d.getMinutes();
+            $("#messagebox").append("<hr style='margin-top: 0px; margin-bottom: 10px;'/><div class='row'><div style='margin-left: 15px;'><img src='/img/shaz.jpg' style='width: 70px; height: 70px; float: left;'/><a href='#' style='margin-left: 10px;'>Shazwi</a><p style='margin-left: 80px; color: #797979;'>"+message+"</p><p style='margin-left: 80px; color: #797979;margin-top: -10px; padding-bottom: 10px;'>"+n+":"+m+"pm</p></div></div>")
+            $("#message").val("");
+            return false;
+           }
+        });
     </script>
 </body>
 </html>

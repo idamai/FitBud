@@ -133,8 +133,8 @@
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/cc.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Chin Chuen</h3>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
@@ -151,54 +151,52 @@
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/jiarong.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Jiarong</h3>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
                     </div>
                     <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
+                        <h4 style="color: #739e73;">$35/hr</h4>
                         <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
+                        <div style="color: #797979;">Reviews (<a href="#">30</a>)</div>
                     <hr style="margin-top: 10px;"/>
                     <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
                 </div>
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/henson.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Henson Tay</h3>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
                     </div>
                     <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
-                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
+                        <h4 style="color: #739e73;">$40/hr</h4>
+                        <div id="stars-existing" class="starrr" data-rating='5' style="color: #797979;">Ratings </div>
+                        <div style="color: #797979;">Reviews (<a href="#">45</a>)</div>
                     <hr style="margin-top: 10px;"/>
                     <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
                 </div>
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/ignatius.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Ignatius</h3>
                     <div>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">yoga</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">taichi</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">taekwando</a>
                     </div>
                     <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
-                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
+                        <h4 style="color: #739e73;">$20/hr</h4>
+                        <div id="stars-existing" class="starrr" data-rating='3' style="color: #797979;">Ratings </div>
+                        <div style="color: #797979;">Reviews (<a href="#">10</a>)</div>
                     <hr style="margin-top: 10px;"/>
                     <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
                 </div>
@@ -209,8 +207,8 @@
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/ce.jpg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Chris Evans</h3>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
@@ -218,7 +216,24 @@
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
                     </div>
                     <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
+                        <h4 style="color: #739e73;">$1000/hr</h4>
+                        <div id="stars-existing" class="starrr" data-rating='5' style="color: #797979;">Ratings </div>
+                        <div style="color: #797979;">Reviews (<a href="#">99</a>)</div>
+                    <hr style="margin-top: 10px;"/>
+                    <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
+                </div>
+            </div>
+            <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
+                <div style="text-align:center;">
+                    <img src="/img/rf.jpeg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Rich Froning</h3>
+                    <div>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
+                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
+                    </div>
+                    <hr style="margin-bottom: 10px;"/>
+                        <h4 style="color: #739e73;">$300/hr</h4>
                         <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
                         <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
                     <hr style="margin-top: 10px;"/>
@@ -227,54 +242,17 @@
             </div>
             <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
                 <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
+                    <img src="/img/th.jpeg" alt="Texto Alternativo" class="img-thumbnail" style="height: 160px; width: 100%;">
+                    <h3>Tony Horton</h3>
                     <div>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
                         <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
                     </div>
                     <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
-                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
-                    <hr style="margin-top: 10px;"/>
-                    <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
-                </div>
-            </div>
-            <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
-                <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
-                    <div>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
-                    </div>
-                    <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
-                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
-                    <hr style="margin-top: 10px;"/>
-                    <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
-                </div>
-            </div>
-            <div class="col-md-2 well" style="margin: 0 15px 15px 15px;">
-                <div style="text-align:center;">
-                    <img src="http://i.imgur.com/UFnnQLO.jpg" alt="Texto Alternativo" class="img-thumbnail">
-                    <h2>Chuan Xin</h2>
-                    <div>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">strength</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">cardio</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">crossfit</a>
-                        <a href="#" class="btn btn-default btn-xs" style="margin-top:2px;">endurance</a>
-                    </div>
-                    <hr style="margin-bottom: 10px;"/>
-                        <h4 style="color: #739e73;">$60/hr</h4>
-                        <div id="stars-existing" class="starrr" data-rating='4' style="color: #797979;">Ratings </div>
-                        <div style="color: #797979;">Reviews (<a href="#">65</a>)</div>
+                        <h4 style="color: #739e73;">$70/hr</h4>
+                        <div id="stars-existing" class="starrr" data-rating='5' style="color: #797979;">Ratings </div>
+                        <div style="color: #797979;">Reviews (<a href="#">45</a>)</div>
                     <hr style="margin-top: 10px;"/>
                     <a href="#" class="btn btn-primary" title="Enlace" style="width: 100%;">View</a>
                 </div>

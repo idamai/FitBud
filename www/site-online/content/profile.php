@@ -98,7 +98,7 @@
                     <div class="btn-group">
                       <button type="button" class="btn btn-default">strength</button>
                       <button type="button" class="btn btn-danger">
-                        5
+                        3
                       </button>
                     </div>
                     <?php
@@ -109,14 +109,14 @@
 						}
 					?>
                     <div style="float: right;">
-                        <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
+                        <img src="/img/cc.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/><img src="/img/cx.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/><img src="/img/henson.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/>
                     </div>
                 </div>
                 <div style="margin-top: 5px;">
                     <div class="btn-group">
                       <button type="button" class="btn btn-default">cardio</button>
                       <button type="button" class="btn btn-danger">
-                        5
+                        2
                       </button>
                     </div>
                     <?php
@@ -127,14 +127,14 @@
 						}
 					?>
                     <div style="float: right;">
-                        <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
+                        <img src="/img/cc.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/><img src="/img/cx.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/>
                     </div>
                 </div>
                 <div style="margin-top: 5px;">
                     <div class="btn-group">
                       <button type="button" class="btn btn-default">crossfit</button>
                       <button type="button" class="btn btn-danger">
-                        5
+                        2
                       </button>
                     </div>
 					<?php
@@ -145,14 +145,14 @@
 						}
 					?>
                     <div style="float: right;">
-                        <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
+                        <img src="/img/cc.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/><img src="/img/cx.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/>
                     </div>
                 </div>
                 <div style="margin-top: 5px;">
                     <div class="btn-group">
                       <button type="button" class="btn btn-default">endurance</button>
                       <button type="button" class="btn btn-danger">
-                        5
+                        1
                       </button>
                     </div>
                     <?php
@@ -163,7 +163,7 @@
 						}
 					?>
                     <div style="float: right;">
-                        <img src="/img/test.jpg" style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/><img src="/img/test.jpg"  style="margin-left: 5px;"/>
+                        <img src="/img/cc.jpg" style="margin-left: 5px; width: 30px; height: 30px;"/>
                     </div>
                 </div>
                 <h3>Gyms I Frequent</h3>

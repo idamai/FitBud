@@ -28,7 +28,7 @@ $(document).ready(function(){
             $("#paymentModal").modal('hide');
         }
 	});
-    
+
 	$("#card-number").mask("0000-0000-0000-0000");
 	$("#card-exp-month").mask("00");	
 	$("#card-exp-year").mask("00");

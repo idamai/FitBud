@@ -76,7 +76,7 @@
                         <div class="input-group col-md-8 col-md-offset-2 input-group-lg">
                           <input type="text" id ="search-zip" class="form-control" placeholder="Your Zipcode">
                           <span class="input-group-btn">
-                            <button id = "search-user" class="btn btn-primary" type="button">Search Trainers</button>
+                            <a href="/results.php" id = "search-user" class="btn btn-primary" type="button">Search Trainers</a>
                           </span>
                         </div>
                     </div>

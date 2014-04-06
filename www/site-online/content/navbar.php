@@ -51,7 +51,7 @@
 								  <a href="#requestModal" data-toggle="modal" data-target="#requestModal" style="padding: 0px;">
 									<li style="padding-left: 10px; padding-bottom: 5px; padding-top:10px;" class="unseen">
 									  <img src="/img/henson.jpg" style="float: left; width: 40px; height: 40px;"/>
-									  <div style="color: #787878; margin-left: 50px; padding-right: 10px;"> <strong style="color: black;">Henson Tay</strong> requested a crossfit session at <strong>Pottruck Gym</strong> for <strong>14/07/2014 | 2pm - 3pm</strong>. <br /> <p style="font-size: 0.8em;">1 day ago</p></div>
+									  <div style="color: #787878; margin-left: 50px; padding-right: 10px;"> <strong style="color: black;">Henson Tay</strong> requested a crossfit session at <strong>Pottruck Gym</strong> for <strong>11am-12pm, 04/07/2014</strong>. <br /> <p style="font-size: 0.8em;">1 day ago</p></div>
 									</li>
 								  </a>
 								</ul>
@@ -63,7 +63,7 @@
 								<ul class="dropdown-menu" style="width: 400px; max-height: 315px;">
 								  <li style="padding-left: 10px; margin-bottom: -5px; font-weight: bold; color: #333333;" id="notifications">Messages</li>
 								  <li class="divider" style="margin-bottom: 0px;"></li>
-									<a href="#" style="padding: 0px;">
+									<a href="/messages.php" style="padding: 0px;">
 									  <li style="padding-left: 10px; padding-bottom: 5px; padding-top:10px;">
 										<img src="/img/henson.jpg" style="float: left; width: 40px; height: 40px;"/>
 										<div style="color: #787878; margin-left: 50px; padding-right: 10px;"> 
@@ -71,8 +71,8 @@
 										  Henson Tay
 										  </strong>
 										  <br /> 
-										  <p style="padding: 0px; margin: 0px;">Test</p>
-										  <p style="font-size: 0.8em;">10:49pm</p>
+										  <p style="padding: 0px; margin: 0px;">Hi Shazwi, I'm interested in trying out crossfit for the first time. I may need some guidance on how to pursue this path.</p>
+										  <p style="font-size: 0.8em;">Yesterday</p>
 										</div>
 									  </li>
 									</a>
@@ -93,8 +93,8 @@
 										  Chin Chuen
 										  </strong>
 										  <br /> 
-										  <p style="padding: 0px; margin: 0px;">Crossfit Session at <strong>Pottruck Gym</strong> for <strong>14/07/2014 | 11pm - 12pm</strong></p>
-										  <p style="font-size: 0.8em;">1 day ago</p>
+										  <p style="padding: 0px; margin: 0px;">Weighlifting Session at <strong>Pottruck Gym</strong> for <strong>10am-11am, 04/06/2014</strong></p>
+										  <p style="font-size: 0.8em;">Today</p>
 										</div>
 									  </li>
 									</a>

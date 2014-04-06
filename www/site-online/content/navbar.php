@@ -38,7 +38,7 @@
 										<li><a href="/profile.php"><i class="fa fa-list-alt"></i> Profile</a></li>
 										<li><a href="/edit_profile.php"><i class="fa fa-cog"></i> Settings</a></li>
 										<li class="divider"></li>
-										<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+										<li><a id="logout-button"><i class="fa fa-power-off"></i> Logout</a></li>
 									</ul>
 								</li>
 							</ul>

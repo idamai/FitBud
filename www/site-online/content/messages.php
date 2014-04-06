@@ -131,7 +131,8 @@
     <script src="js/ratings2.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-    <script src="js/profile.js"></script>
+    <script src="js/profile.js"></script>	
+	<script src="js/logout.js"></script>
     <script>
    //     $('#loginModal').modal(options);
     </script>
